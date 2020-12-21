@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questionnaires",
+  "info": {
+    "name": "Questionnaire",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "parents",
+        "staff"
+      ]
+    },
+    "questions": {
+      "collection": "question",
+      "via": "questionnaire"
+    }
+  }
+}
