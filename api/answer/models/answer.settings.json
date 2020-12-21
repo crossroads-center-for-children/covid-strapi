@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "answers",
+  "info": {
+    "name": "Answer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "value": {
+      "type": "boolean"
+    },
+    "response": {
+      "model": "response",
+      "via": "answers"
+    },
+    "question": {
+      "model": "question",
+      "via": "answers"
+    }
+  }
+}
