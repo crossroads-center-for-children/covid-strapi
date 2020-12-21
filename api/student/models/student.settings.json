@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "name": "Student"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "parents": {
+      "via": "children",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "room": {
+      "via": "students",
+      "model": "room"
+    }
+  }
+}
