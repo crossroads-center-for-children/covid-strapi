@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "responses",
+  "info": {
+    "name": "Response"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "datetime": {
+      "type": "datetime"
+    },
+    "user": {
+      "via": "responses",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "answers": {
+      "via": "response",
+      "collection": "answer"
+    }
+  }
+}
