@@ -18,9 +18,9 @@
       "type": "string"
     },
     "parents": {
+      "via": "children",
       "plugin": "users-permissions",
-      "collection": "user",
-      "via": "children"
+      "collection": "user"
     },
     "room": {
       "model": "room",

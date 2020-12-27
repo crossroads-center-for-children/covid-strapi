@@ -70,8 +70,8 @@
       "type": "string"
     },
     "children": {
-      "via": "parents",
       "collection": "student",
+      "via": "parents",
       "dominant": true
     },
     "type": {
@@ -96,6 +96,9 @@
     },
     "signInCode": {
       "type": "integer"
+    },
+    "fullName": {
+      "type": "string"
     }
   }
 }
