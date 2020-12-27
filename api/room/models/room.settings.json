@@ -14,8 +14,8 @@
       "type": "string"
     },
     "students": {
-      "collection": "student",
-      "via": "room"
+      "via": "room",
+      "collection": "student"
     }
   }
 }

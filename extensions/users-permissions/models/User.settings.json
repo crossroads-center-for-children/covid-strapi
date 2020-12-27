@@ -70,8 +70,8 @@
       "type": "string"
     },
     "children": {
-      "collection": "student",
       "via": "parents",
+      "collection": "student",
       "dominant": true
     },
     "type": {
