@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "questions",
   "info": {
-    "name": "Question"
+    "name": "Question",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,12 +15,19 @@
       "type": "text"
     },
     "answers": {
-      "via": "question",
-      "collection": "answer"
+      "collection": "answer",
+      "via": "question"
     },
     "questionnaire": {
-      "via": "questions",
-      "model": "questionnaire"
+      "model": "questionnaire",
+      "via": "questions"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "checkbox",
+        "radio"
+      ]
     }
   }
 }
