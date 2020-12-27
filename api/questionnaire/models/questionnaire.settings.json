@@ -14,13 +14,13 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "parents",
-        "staff"
+        "parent",
+        "clinical"
       ]
     },
     "questions": {
-      "collection": "question",
-      "via": "questionnaire"
+      "via": "questionnaire",
+      "collection": "question"
     }
   }
 }
