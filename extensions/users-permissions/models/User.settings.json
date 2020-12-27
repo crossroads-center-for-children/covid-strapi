@@ -73,6 +73,29 @@
       "collection": "student",
       "via": "parents",
       "dominant": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "parent",
+        "clinical",
+        "admin"
+      ]
+    },
+    "summary": {
+      "type": "json"
+    },
+    "resetToken": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "signInCode": {
+      "type": "integer"
     }
   }
 }
