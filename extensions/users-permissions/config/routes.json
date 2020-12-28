@@ -1,0 +1,32 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "auth/forgot",
+      "handler": "Auth.forgotPassword",
+      "config": {
+        "policies": [],
+        "prefix": "",
+        "description": "Email user link to reset password",
+        "tag": {
+          "plugin": "users-permissions",
+          "name": "User"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "auth/reset",
+      "handler": "Auth.resetPassword",
+      "config": {
+        "policies": [],
+        "prefix": "",
+        "description": "Reset password of user with matching token",
+        "tag": {
+          "plugin": "users-permissions",
+          "name": "User"
+        }
+      }
+    }
+  ]
+}
