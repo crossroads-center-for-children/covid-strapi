@@ -28,6 +28,10 @@
     },
     "active": {
       "type": "boolean"
+    },
+    "tags": {
+      "via": "students",
+      "collection": "tag"
     }
   }
 }
